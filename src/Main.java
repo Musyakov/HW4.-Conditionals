@@ -134,7 +134,7 @@ public class Main {
         boolean theLargestNumberIs2 = two >= one && two >= three;
         boolean theLargestNumberIs3 = three >= two && three >= one;
         if (allNumbersEqual) {
-            System.out.println("If the numbers are " + one + " " + two + " " + three + " they all are equal ");
+            System.out.println("If the numbers are " + one + " " + two + " " + three + " they all are equal");
         } else {
             if (oneAndTwoEqual) {
                 if (theLargestNumberIs1) {
