@@ -123,52 +123,17 @@ public class Main {
     }
     public static void task7() {
         System.out.println("Задача 7");
-        int one = -4;
-        int two = -8;
-        int three = -4;
-        boolean oneAndTwoEqual = one == two;
-        boolean oneAndThreeEqual = one == three;
-        boolean twoAndThreeEqual = two == three;
-        boolean allNumbersEqual = oneAndTwoEqual && twoAndThreeEqual;
-        boolean theLargestNumberIs1 = one >= two && one >= three;
-        boolean theLargestNumberIs2 = two >= one && two >= three;
-        boolean theLargestNumberIs3 = three >= two && three >= one;
-        if (allNumbersEqual) {
-            System.out.println("If the numbers are " + one + " " + two + " " + three + " they all are equal");
-        } else {
-            if (oneAndTwoEqual) {
-                if (theLargestNumberIs1) {
-                    System.out.println("If the numbers are " + one + " " + two + " " + three + " the largest numbers are №1 and №2 - " + two);
-                } else {
-                    System.out.println("If the numbers are " + one + " " + two + " " + three + " the largest number is №3 - " + three);
-                }
-            } else {
-                if (twoAndThreeEqual) {
-                    if (theLargestNumberIs2) {
-                        System.out.println("If the numbers are " + one + " " + two + " " + three + " the largest numbers are №2 and №3 - " + two);
-                    } else {
-                        System.out.println("If the numbers are " + one + " " + two + " " + three + " the largest numbers is №1 - " + one);
-                    }
-                } else {
-                    if (oneAndThreeEqual) {
-                        if (theLargestNumberIs1) {
-                            System.out.println("If the numbers are " + one + " " + two + " " + three + " the largest numbers are №1 and №3 - " + one);
-                        } else {
-                            System.out.println("If the numbers are " + one + " " + two + " " + three + " the largest numbers is №2 - " + two);
-                        }
-                    } else {
-                        if (theLargestNumberIs1) {
-                            System.out.println("If the numbers are " + one + " " + two + " " + three + " the largest numbers is №1 - " + one);
-                        } else {
-                            if (theLargestNumberIs2) {
-                                System.out.println("If the numbers are " + one + " " + two + " " + three + " the largest number is №2 - " + two);
-                            } else {
-                                System.out.println("If the numbers are " + one + " " + two + " " + three + " the largest number is №3 - " + three);
-                            }
-                        }
-                    }
-                }
-            }
+        int one = 3;
+        int two = 3;
+        int three = 3;
+        if (one > two && one > three){
+            System.out.println("Число 1 больше чисел 2 и 3");
+        }
+        else if (two > three){
+            System.out.println("Число 2 больше числа 3");
+        }
+        else {
+            System.out.println("Число 3 больше чем, число 1 и число 2");
         }
     }
 }
